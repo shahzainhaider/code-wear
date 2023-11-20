@@ -15,4 +15,12 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    {pattern: /bg-./},
+    // {pattern: /text-./},
+    {pattern: /border-./,
+    variants: ['after', 'focus', 'hover', 'selection']},
+    {pattern: /ring-./,
+    variants: ['after', 'focus', 'hover', 'selection']},
+  ]
 }
