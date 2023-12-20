@@ -51,12 +51,12 @@ const page = ({ params }) => {
   //add to cart
   const addToCartBtn =(qty,name,price)=>{
     if (size === 'size') {
-      // toast.error('Select item Color !!')
+      toast.error('Select item Color !!')
       return true
     } else {
       console.log('else')
       addToCart(colorSizeSlug[color][size].slug,qty,name,price,size,color)
-      // toast.success('Added to Cart !!')
+      toast.success('Added to Cart !!')
     }
   }
 
@@ -77,7 +77,7 @@ console.log(colorSizeSlug);
         return<section key={id} className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
-            <Image priority alt="ecommerce" className="lg:w-1/2  lg:h-auto px-10 object-cover object-center rounded" src={tshirt} />
+            <Image priority alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto px-10 object-cover object-center rounded" src={tshirt} />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 className="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
               <div className="flex items-center gap-4">
