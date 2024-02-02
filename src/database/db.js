@@ -6,7 +6,6 @@ const config={
 
 export async function connectDb(){
     if(config.isconnected){
-        console.log(1)
         return
         
     }
