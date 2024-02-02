@@ -56,7 +56,8 @@ const page = ({ params }) => {
     } else {
       console.log('else')
       addToCart(colorSizeSlug[color][size].slug,qty,name,price,size,color)
-      toast.success('Added to Cart !!')
+      console.log(color)
+      toast.success(`item added with color ${color} and Size ${size}`)
     }
   }
 
