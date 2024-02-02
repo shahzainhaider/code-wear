@@ -75,6 +75,7 @@ console.log(colorSizeSlug);
     <>
       {product.map((item,id)=>{
         return<section key={id} className="text-gray-600 body-font overflow-hidden">
+          <div className="hidden bg-purple-500 bg-green-500 bg-yellow-500 bg-black-500"></div>
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <Image priority alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto px-10 object-cover object-center rounded" src={tshirt} />
