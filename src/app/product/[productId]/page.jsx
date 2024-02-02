@@ -50,8 +50,8 @@ const page = ({ params }) => {
 
   //add to cart
   const addToCartBtn =(qty,name,price)=>{
-    if (size === 'size') {
-      toast.error('Select item Color !!')
+    if (size === 'size' && color ==='color') {
+      toast.error('Select item Color and Size !!')
       return true
     } else {
       console.log('else')
