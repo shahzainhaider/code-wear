@@ -71,7 +71,7 @@ const UserProvider = ({ children }) => {
 
   //fetching products
   const getProducts = async () => {
-    const res = await fetch("https://code-wear-sshnaqvi2001-gmailcom.vercel.app/api/products", {
+    const res = await fetch("https://code-wear.vercel.app/api/products", {
       method: "GET",
       headers: {
         accept: "application/json",
