@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import tshirt from '../../../../public/tshirt.jpg'
 import Image from 'next/image'
 import UserContext from '@/context/userContext'
-// import { toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 
 const page = ({ params }) => {
   const { productId } = params
@@ -62,7 +62,7 @@ const page = ({ params }) => {
 
 
   const checkPin = async () => {
-    const res = await fetch(`http://localhost:3000/api/pincodes`)
+    const res = await fetch(`https://code-wear.vercel.app/api/pincodes`)
     const pinJson = await res.json()
     if (pinJson.includes(parseInt(pin))) {
       setService(true)
